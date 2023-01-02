@@ -1,6 +1,6 @@
 #container {
     width: 1000px;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     margin: 0 auto;
 }
 #header{
@@ -47,10 +47,70 @@ h1 a {
     clear: both;
 }
 #menu{
-    height: 700px;
+    height: 70px;
+    background: yellow;
+    padding: 7px;
+}
+
+ul{
+    list-style: none;
 }
 
 #menu ul li{
     float: left;
+    padding: 0 25px;
+    height: 30px;
+    border-right: 1px solid purple ;
 
+}
+#menu ul li:last-child{
+    border-right: none ;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: aqua;
+    line-height: 30px;
+    -webkit-transition: font-size 0.3s ease; /* this is for safari*/
+    -moz-transition: font-size 0.3s ease; /* this is for mozilla*/
+    -o-transition: font-size 0.3s ease; /* this is for opera*/
+    -ms-transition: font-size 0.3s ease; /* this is for IE*/
+    transition: font-size 0.3s ease; /* default/chrome */
+
+}
+#menu ul li a:hover, #menu ul li a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+}
+#introduction {
+    background: linear-gradient(rgb(207, 247, 115),rgb(72, 138, 19));
+    padding: 30px;
+    margin: 15px 0px;
+    height: 400px;
+}
+#introduction h3{
+    font-size: 45px;
+    color: darkgreen;
+    font-weight: normal;
+}
+#introduction p{
+    font-size: 25px;
+    color: olive;
+    text-align: justify;
+}
+.sidebar {
+    height: 500px;
+    width: 400px;
+    border: 1px solid #417e7b;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+#leftsidebar{
+    float: left;
+}
+#rightsidebar{
+    float: right;
 }
