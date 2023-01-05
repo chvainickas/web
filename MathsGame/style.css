@@ -1,0 +1,140 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle, white,rgb(78, 78, 78));
+}
+#container{
+    height: 400px;
+    width: 550px;
+    background-color: rgb(84, 139, 202);
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px rgb(55, 55, 207);
+    -ms-box-shadow: 4px 4px 0px 0px rgb(55, 55, 207);
+    -o-box-shadow: 4px 4px 0px 0px rgb(55, 55, 207);
+    -moz-box-shadow: 4px 4px 0px 0px rgb(55, 55, 207);
+    -webkit-box-shadow: 4px 4px 0px 0px rgb(55, 55, 207);
+    position: relative;
+}
+#score{
+    background-color: yellow;
+    color: grey;
+    padding: 10px;
+    position: absolute;
+    left: 500px;
+    -o-box-shadow: 0px 4px olive;
+    -ms-box-shadow: 0px 4px olive;
+    -moz-box-shadow: 0px 4px olive;
+    -webkit-box-shadow: 0px 4px olive;
+    box-shadow: 0px 4px olive;
+}
+#correct{
+    position: absolute;
+    left: 250px;
+    background-color: lime;
+    color:white;
+    padding: 10px;
+    display: none;
+}
+#wrong{
+    position: absolute;
+    left: 250px;
+    background-color: red;
+    color:white;
+    padding: 10px;
+    display: none;
+}
+#question{
+    width: 450px;
+    height: 160px;
+    margin: 50px auto 10px auto;
+    background-color: rgb(186, 140, 196);
+    -o-box-shadow: 0px 4px blueviolet;
+    -moz-box-shadow: 0px 4px blueviolet;
+    -webkit-box-shadow: 0px 4px blueviolet;
+    -ms-box-shadow: 0px 4px blueviolet;
+    box-shadow: 0px 4px blueviolet;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+}
+#instruction{
+    width: 450px;       
+    height: 50px;
+    background-color: blueviolet;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 4px rgb(186, 140, 196);
+    -ms-box-shadow: 0px 4px rgb(186, 140, 196);
+    -webkit-box-shadow: 0px 4px rgb(186, 140, 196);
+    -moz-box-shadow: 0px 4px rgb(186, 140, 196);
+    -o-box-shadow: 0px 4px rgb(186, 140, 196);
+
+}
+
+#choices{
+    width: 450px;
+    height: 100px;
+    margin: 5px auto 1px auto;
+    border: 1px solid;
+}
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px gray;
+    -o-box-shadow: 0px 3px gray;
+    -moz-box-shadow: 0px 3px gray;
+    -ms-box-shadow: 0px 3px gray;
+    box-shadow: 0px 3px gray;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -moz-animation: all 0.2s;
+    -webkit-animation: all 0.2s;
+    -o-animation: all 0.2s;
+    -ms-animation: all 0.2s;
+}
+.box:hover, #startreset:hover{
+    background-color:rgb(186, 140, 196) ;
+    color: white;
+    box-shadow: 0px 3px blueviolet;
+    -webkit-box-shadow: 0px 3px blueviolet;
+    -o-box-shadow: 0px 3px blueviolet;
+    -moz-box-shadow: 0px 3px blueviolet;
+    -ms-box-shadow: 0px 3px blueviolet;
+}
+#box4{
+    margin-right: 0px;
+}
+.box:active, #startrest:active{
+    box-shadow: 0 0;
+    top: 4px;
+}
+#startreset {
+    width: 85px;
+    padding: 7px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px gray;
+    -o-box-shadow: 0px 3px gray;
+    -moz-box-shadow: 0px 3px gray;
+    -ms-box-shadow: 0px 3px gray;
+    box-shadow: 0px 3px gray;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -moz-animation: all 0.2s;
+    -webkit-animation: all 0.2s;
+    -o-animation: all 0.2s;
+    -ms-animation: all 0.2s;
+}
