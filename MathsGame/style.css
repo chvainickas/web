@@ -97,6 +97,7 @@ html{
     line-height: 80px;
     position: relative;
     transition: all 0.2s;
+    animation: all 0.2s;
     -moz-animation: all 0.2s;
     -webkit-animation: all 0.2s;
     -o-animation: all 0.2s;
@@ -114,7 +115,7 @@ html{
 #box4{
     margin-right: 0px;
 }
-.box:active, #startrest:active{
+.box:active, #startreset:active{
     box-shadow: 0 0;
     top: 4px;
 }
@@ -133,6 +134,7 @@ html{
     text-align: center;
     position: relative;
     transition: all 0.2s;
+    animation:all 0.2s ;
     -moz-animation: all 0.2s;
     -webkit-animation: all 0.2s;
     -o-animation: all 0.2s;
