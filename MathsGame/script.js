@@ -2,45 +2,58 @@ var playing = false;
 var score;
 var action;
 var timeRemaining;
+var correctAnswer;
 
 document.getElementById("startreset").onclick = function() {
     //  if we are playing
     if (playing) {
-        //reload
-        location.reload();
+        location.reload();//reload
          }
         else{
             hide("gameover");
             playing=true;
-            //set score to zero
+            generateQA()//set score to zero
         score = 0;
-        document.getElementById("gamescore").innerHTML = score;
-        //show countdown box
+        document.getElementById("gamescore").innerHTML = score;//show countdown box
         show("timer");
-        timeRemaining = 2;
-        document.getElementById("time").innerHTML = timeRemaining;
-        // change button to reset
-        document.getElementById("startreset").innerHTML = "Reset"
-        // reduce time by 1 sec
+        timeRemaining = 60;
+        document.getElementById("time").innerHTML = timeRemaining;// change button to reset
+        document.getElementById("startreset").innerHTML = "Reset"// reduce time by 1 sec
         startCountdown();
         }
 }
-        // reduce time by 1 sec
-            //timeleft
-                //yes-> cnt
-                //no-> gameover
-                    // show score
-// if we click on the start/reset
-    //  if we are playing
+
+
+for (i=1; i<5; i++){
+document.getElementById("box"+i).onclick = function(){ // if we click on answer box
+    if (playing == true) { //if we are playing 
+        if (this.innerHTML == correctAnswer) { //correct
+            console.log(correctAnswer);
+            score++; 
+            document.getElementById("gamescore").innerHTML = score;
+            hide("wrong");
+            show("correct");
+            setTimeout(function() {
+                hide("correct")
+            }, 1000);
+            generateQA();
+    
         
-    // if we're not playing
+      }
+        else{
+            document.getElementById("gamescore").innerHTML = score;
+            show("wrong");
+            hide("correct");
+            setTimeout(function() {
+            hide("wrong")
+            }, 1000);
+      }
+    }
+}
+    
+}
 
-        // change button to reset
-        // generate new q&a
-
-// if we click on answer box
-    //if we are playing 
-        //correnct
+    
             //yes
                 // increase score by 1
                 // show correct box for 1s
@@ -78,6 +91,48 @@ function show(Id) {
     
 }
 function generateQA() {
+    var x =1+ Math.round(9*Math.random());
+    var y =1+ Math.round(9*Math.random());
+    correctAnswer = x*y;
+    document.getElementById("question").innerHTML = x + "x" +y;
+    var correctPosition = 1+ Math.round(3*Math.random());
+    document.getElementById("box"+correctPosition).innerHTML = correctAnswer;
 
+    var answers=[correctAnswer];
+
+    for (i=1; i<5;i++){
+        if(i != correctPosition){
+            var wrongAnswer;
+            do {
+            wrongAnswer = (1+ Math.round(9*Math.random()))*(1+ Math.round(9*Math.random()));}
+            while (answers.indexOf(wrongAnswer)>-1) 
+            document.getElementById("box"+i).innerHTML = wrongAnswer;
+            answers.push(wrongAnswer);
+            
+        }
+        }
+    }
     
-}
+//     function generateQA(){
+//  var x = 1+ Math.round(9*Math.random());
+//  var y = 1+ Math.round(9*Math.random());
+//  correctAnswer = x*y;
+//  document.getElementById("question").innerHTML = x +"x" + y;
+//  var correctPosition = 1+ Math.round(3*Math.random());
+// document.getElementById("box"+correctPosition).innerHTML = correctAnswer; //fill one box with the correct answer
+
+//  //fill other boxes with wrong answers
+
+//  var answers = [correctAnswer];
+
+//  for(i=1; i<5; i++){
+//  if(i != correctPosition) {
+//             var wrongAnswer;
+//             do{
+//             wrongAnswer = (1+Math.round(9*Math.random()))*(1+Math.round(9*Math.random()));} //a wrong answer}
+//             while(answers.indexOf(wrongAnswer)>-1)
+//             document.getElementById("box"+i).innerHTML =wrongAnswer;
+//             answers.push(wrongAnswer);
+//  }
+//  }
+// }
