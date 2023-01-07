@@ -1,1 +1,1 @@
-Maths Game project I did where I mainly learned how to change the content(.innerHTML) and styling(.style) of my website throught Javascript to create a maths game that test the users knowledge of multiplication of number between 1 and 10.
+Maths Game project I did where I mainly learned how to change the content(.innerHTML) and styling(.style) of my website through JavaScript to create a maths game that test the users knowledge of multiplication of number between 1 and 10.
