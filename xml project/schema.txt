@@ -1,0 +1,8 @@
+>xml
+>>schema
+>>>products
+>>>>product
+>>>>
+>>>
+>>/schema
+>/xml

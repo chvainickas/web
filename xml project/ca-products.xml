@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ca-schema.xsd">
+    <product code="000-01">
+        <category>T-Shirt</category>
+        <description>Small Navy T-Shirt</description>
+        <quantity>999</quantity>
+        <price>20</price>
+    </product>
+    <product code="000-02">
+        <category>T-Shirt</category>
+        <description>Medium Navy T-Shirt</description>
+        <quantity>999</quantity>
+        <price>25</price>
+    </product>
+    <product code="000-03">
+        <category>T-Shirt</category>
+        <description>Large Navy T-Shirt</description>
+        <quantity>999</quantity>
+        <price>30</price>
+    </product>
+    <product code="000-04">
+        <category>T-Shirt</category>
+        <description>Small Yellow T-Shirt</description>
+        <quantity>999</quantity>
+        <price>20</price>
+    </product>
+    <product code="000-05">
+        <category>T-Shirt</category>
+        <description>Medium Yellow T-Shirt</description>
+        <quantity>999</quantity>
+        <price>25</price>
+    </product>
+    <product code="000-06">
+        <category>T-Shirt</category>
+        <description>Large Yellow T-Shirt</description>
+        <quantity>999</quantity>
+        <price>30</price>
+    </product>
+    <product code="000-07">
+        <category>Jumper</category>
+        <description>Extra Small Yellow and Navy Jumper</description>
+        <quantity>999</quantity>
+        <price>70</price>
+    </product>
+    <product code="000-08">
+        <category>Jumper</category>
+        <description>Small Yellow and Navy Jumper</description>
+        <quantity>999</quantity>
+        <price>80</price>
+    </product>
+    <product code="000-09">
+        <category>Jumper</category>
+        <description>Medium Yellow and Navy Jumper</description>
+        <quantity>999</quantity>
+        <price>90</price>
+    </product>
+    <product code="000-10">
+        <category>Jumper</category>
+        <description>Large Yellow and Navy Jumper</description>
+        <quantity>999</quantity>
+        <price>100</price>
+    </product>
+</products>

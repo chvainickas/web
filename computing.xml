@@ -1,0 +1,42 @@
+<course> Computing
+<year> 2023 </year>
+<module name="OOP"> 
+    <session day="Tuesday" type="lecture">
+        <room>3.03</room>
+        <startTime>10</startTime>
+        <endTime>12</endTime>
+        <lecturer>Emer</lecturer>
+    </session>
+<timetable day="Friday">
+        <room>3.03</room>
+        <startTime>9</startTime>
+        <endTime>11</endTime>
+        <lecturer>Emer</lecturer>
+    </timetable>
+</module>
+<endTime>4</endTime>
+<module>ADB <timetable day="Monday">
+        <room>3.03</room>
+        <startTime>2</startTime>
+        <lecturer>William</lecturer>
+    </timetable>
+<timetable day="Friday">
+        <room>3.03</room>
+        <startTime>9</startTime>
+        <endTime>11</endTime>
+        <lecturer>William</lecturer>
+    </timetable>
+</module>
+<module>WEB <timetable day="Monday">
+        <room>3.03</room>
+        <startTime>4</startTime>
+        <endTime>6</endTime>
+        <lecturer>Abdul</lecturer>
+    </timetable>
+<timetable day="Tuesday">
+        <room>3.03</room>
+        <startTime>9</startTime>
+        <endTime>11</endTime>
+        <lecturer>William</lecturer>
+    </timetable>
+</module>
